@@ -7,7 +7,7 @@ canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
 
 // Define variables
-let numShapes = 5;  // number of shapes to draw
+let numShapes = Math.random() * 20;  // number of shapes to draw
 let shapes = [];    // array to store shapes
 
 // Define Shape class
