@@ -48,8 +48,8 @@ class Shape {
 
 // Initialize shapes
 for (let i = 0; i < numShapes; i++) {
-  const x = Math.random() * canvas.width;
-  const y = Math.random() * canvas.height;
+  const x = (Math.random() * (canvas.width - 20)) + 10;
+  const y = (Math.random() * (canvas.height - 20)) + 10;
   const radius = Math.random() * 50 + 20;
   const speed = Math.random() * 2 + 1;
   shapes.push(new Shape(x, y, radius, speed));
