@@ -24,7 +24,10 @@ class Shape {
   draw() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-    ctx.strokeStyle = 'white';
+    ctx.strokeStyle = `rgb(
+      0,
+      ${Math.floor(Math.random() * 255)},
+      ${Math.floor(Math.random() * 255)})`;
     ctx.stroke();
     ctx.closePath();
   }
