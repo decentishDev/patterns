@@ -18,16 +18,16 @@ class Shape {
     this.radius = radius;
     this.speed = speed;
     this.angle = Math.random() * Math.PI * 2;
+    this.strokeStyle = `rgb(
+      0,
+      ${Math.floor(Math.random() * 255)},
+      ${Math.floor(Math.random() * 255)})`;
   }
 
   // Draw method to draw shape on canvas
   draw() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-    ctx.strokeStyle = `rgb(
-      0,
-      ${Math.floor(Math.random() * 255)},
-      ${Math.floor(Math.random() * 255)})`;
     ctx.stroke();
     ctx.closePath();
   }
